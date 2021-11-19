@@ -41,12 +41,18 @@ function renderList () {
     let h2Tag = document.createElement('H2')
     // add o título da lista salva no título do card
     h2Tag.innerHTML = lista.titulo
+    // cria btn
+    let btnAddItem = document.createElement('BUTTON')
+    //adiciona texto ao btn
+    btnAddItem.innerHTML = "novo item"
     //cria uma div para ser o card da lista
     let divTag = document.createElement('DIV')
     // add a classe card-lista a div para o css
     divTag.setAttribute('class','card-lista')
     //add o h2 a div
     divTag.appendChild(h2Tag)
+    // add o btnAddItem a div
+    divTag.appendChild(btnAddItem)
     // add a div.card-lista a div que contem todas as listas na tela
     divListas.appendChild(divTag)
   })
